@@ -26,8 +26,28 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.header-top {
+.header {
     background-color: #333333;
+}
+
+.header__top {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__top__nav div {
+    display: inline-block;
+}
+
+.header__top__link {
+    text-decoration: none;
+    color: #8e8c8c;
+    padding: 10px 20px;
+    background-color: transparent;
 }
 
 select {
@@ -36,32 +56,6 @@ select {
     border: none;
 }
 
-.header-top-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 50px;
-}
-
-.header-top-currency {
-    display: inline-block;
-    margin: auto;
-
-}
-
-.header-top-menu {
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.top-link {
-    text-decoration: none;
-    color: #8e8c8c;
-    margin: auto 25px;
-    display: inline-block;
-}
 
 .header-main {
     display: flex;
@@ -80,17 +74,9 @@ select {
 }
 
 .cart {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: transparent;
-    width: 150px;
-    padding: 10px 0;
-}
-
-.cart:hover {
     background-color: #00c8c8;
-    color: #ffffff;
+    padding: 10px 10px;
+    margin-left: 25px;
 }
 
 .select__cart {
